@@ -1,4 +1,4 @@
-
+const express = require("express");
 const stripe = require("stripe")("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");
 
 exports.stripePaymentIntentRequest = functions.https.onRequest(async (req, res) => {
